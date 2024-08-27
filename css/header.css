@@ -1,0 +1,174 @@
+.container-md {
+  margin-bottom: 10em;
+  padding: 10px;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.topbar-wrap {
+  margin-top: 20px;
+  border-color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+#search-bar input {
+  border: none;
+  background-color: transparent;
+}
+
+#search-bar input::placeholder {
+  color: white;
+}
+
+#globe-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+#contact-and-destination {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact-and-destination a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#contact-and-destination a:hover {
+  font-size: larger;
+  background-color: rgb(255, 193, 7);
+  border-radius: 10px;
+  vertical-align: center;
+  text-align: center;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/header.jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+}
+
+.topbar-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#globe-icon {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-and-destination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact-and-destination a:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+#book-form .container-md h1 {
+  font-size: 4rem;
+}
+
+#agency-quote {
+  text-transform: uppercase;
+  text-align: initial;
+}
+
+#book-travel-form input,
+select,
+#confirm-travel-btn > button {
+  border-radius: 10px;
+  min-height: 40px;
+}
+
+#book-travel-form {
+  display: grid;
+  grid-template-areas:
+    "destination destination destination"
+    "from to number-of-guests"
+    "confirm-travel-btn confirm-travel-btn confirm-travel-btn";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+#destination-select {
+  grid-area: destination;
+  grid-column: span 3;
+}
+
+#from-date {
+  grid-area: from;
+}
+
+#to-date {
+  grid-area: to;
+}
+
+#number-of-guests {
+  grid-area: number-of-guests;
+}
+
+#confirm-travel-btn {
+  grid-area: confirm-travel-btn;
+  grid-column: span 3;
+}
+
+#confirm-travel-btn button {
+  width: 100%;
+}
+
+.label-on-the-top {
+  display: flex;
+  flex-direction: column;
+}
+
+#book-form .container-md {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #book-travel-form {
+    grid-template-areas: "destination from to number-of-guests confirm-travel-btn";
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  #destination-select,
+  #confirm-travel-btn {
+    grid-column: auto;
+  }
+
+  #contact-and-destination a:hover {
+    font-size: larger;
+    background-color: rgb(255, 193, 7);
+    border-radius: 10px;
+    vertical-align: center;
+    text-align: center;
+    padding: 5px;
+  }
+}

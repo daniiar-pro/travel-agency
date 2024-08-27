@@ -1,0 +1,24 @@
+footer {
+  background-color: #ffc107;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer .container-md {
+  margin: 0 auto;
+}
+
+#newsletter {
+  margin-top: 20px;
+}
+
+footer .container-md #links a {
+  display: block;
+}
+
+@media screen and (min-width: 576px) {
+  footer > .container-md {
+    display: flex;
+    justify-content: space-between;
+  }
+}

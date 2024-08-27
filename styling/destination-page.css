@@ -1,0 +1,26 @@
+
+
+#destination-container {
+    margin: 0 auto;
+}
+
+#des-image   {
+
+    display: flex;
+    justify-content: center;
+}
+
+#des-image > img {
+    object-fit:contain;
+    width: 50%;
+    border-radius: 30px;
+    margin-bottom: 5rem;
+}
+
+#des-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
