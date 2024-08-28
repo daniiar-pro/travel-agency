@@ -172,3 +172,10 @@ select,
     padding: 5px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #globe-icon, #destinations-page, #contact-page {
+    display: none;
+  }
+
+}
