@@ -17,81 +17,138 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link href="./css/header.css" rel="stylesheet" type="text/css" />
     <link href="./css/destinations.css" rel="stylesheet" type="text/css" />
     <link href="./css/footer.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header id="header">
-      <div id="top-nav">
-        <div class="container-md topbar-wrap">
-          <div id="search-bar">
-            <img src="/icons/search-white.svg" alt="Search bar icon" />
-            <input type="search" id="query" name="query" placeholder="Search" />
-          </div>
 
-          <div id="globe-icon">
-            <a href="/index.html">
-              <img src="/icons/globe-white.svg" alt="Globe icon" />
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <form class="input-group">
+            <img src="./icons/search-white.svg" alt="search-icon" />
+            <input
+              class="form-control"
+              id="search-field"
+              name="query"
+              placeholder="Search"
+              type="text"
+            />
+          </form>
+
+          <div id="logo">
+            <a href="./index.html">
+              <img src="../icons/globe-white.svg" alt="logo" style="width: 100%; height: 100%;"/>
             </a>
           </div>
 
-          <div id="contact-and-destination">
-            <a id="destinations-page" href="/pages/destinations-gal.html">Destinations</a>
-            <a id="contact-page" href="pages/contact-us.html">Contact</a>
+          <div id="menu">
+            <nav id="nav-icons">
+              <a href="./pages/destinations-gal.html">
+                <img
+                  src="./icons/destination-icon.svg"
+                  alt="destination-icon"
+                  style="width: 30%"
+                />
+              </a>
+              <a href="./pages/contact-us.html" id="image-second">
+                <img
+                  src="./icons/contact-icon.svg"
+                  alt="contact-icon"
+                  style="width: 30%"
+                />
+              </a>
+            </nav>
+
+            <nav class="d-none d-md-block" id="nav-texts">
+              <a href="./pages/destinations-gal.html">Destinations</a>
+              <a href="./pages/contact-us.html">Contact</a>
+            </nav>
           </div>
         </div>
       </div>
 
-      <div id="book-form">
-        <div class="container-md">
-          <div id="agency-quote">Year Long Travel</div>
+      <div id="book">
+        <div class="container-md wrap">
+          <div class="badge tagline">Year long travel</div>
           <h1>
             Book your next <br />
             destination
           </h1>
 
-          <form id="book-travel-form">
-            <div class="label-on-the-top" id="destination-select">
-              <label for="select-destination">Destination</label>
+          <form>
+            <div class="destination-select">
+              <label>Destination</label>
               <select
-                name="select-destination"
-                id="select-destination"
+                name="destination"
+                id="book-field-destination"
+                class="form-select"
                 required
               >
                 <option value="" disabled selected>Destination</option>
-                <option value="Paris">Paris</option>
-                <option value="San Francisco">San Francisco</option>
-                <option value="Sydney">Sydney</option>
-                <option value="Tokyo">Tokyo</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sydney">Sydney</option>
+                <option value="san-francisco">San Francisco</option>
               </select>
             </div>
 
-            <div class="label-on-the-top" id="from-date">
-              <label for="fromDate">From</label>
+            <div class="from">
+              <label for="book-field-from"> From </label>
+
               <input
                 type="date"
-                name="fromDate"
-                id="fromDate"
-                required
                 aria-label="From"
+                class="form-control"
+                id="book-field-form"
+                name="from"
+                required
               />
             </div>
 
-            <div class="label-on-the-top" id="to-date">
-              <label for="toDate">To</label>
-              <input type="date" name="toDate" id="toDate" required />
+            <div class="to">
+              <label for="book-field-to"> To </label>
+              <input
+                type="date"
+                aria-label="To"
+                class="form-control"
+                id="book-field-to"
+                name="to"
+                required
+              />
             </div>
 
-            <div class="label-on-the-top" id="number-of-guests">
-              <label for="guests">Guests</label>
-              <input type="number" name="guests" id="guests" required />
+            <div class="guests">
+              <label for="book-field-guests"> Guests </label>
+              <input
+                type="number"
+                aria-label="Enter a number of guests"
+                class="form-control"
+                id="book-field-guests"
+                max="10"
+                min="1"
+                name="guests"
+                value="2"
+              />
             </div>
 
-            <div class="label-on-the-top" id="confirm-travel-btn">
-              <label style="visibility: hidden">Book</label>
-              <button type="submit" class="btn btn-warning">
-                <img src="/icons/arrow-right.svg" alt="Arrow right icon" />
+            <div class="submit">
+              <button class="btn btn-primary" title="Search" type="submit">
+                <img src="./icons/arrow-right-white.svg" alt="arrow" />
               </button>
             </div>
           </form>
@@ -99,99 +156,13 @@
       </div>
     </header>
 
-    <section>
-      <div class="container-md">
-        <div id="descriptions">
-          <h3>Destinations</h3>
+    <!-- Section -->
+    <!-- Footer -->
 
-          <div class="description">
-            <p class="para-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed
-              aliquam repellat architecto magnam enim, non at fugit inventore
-              voluptatum exercitationem labore id mollitia eius debitis aut quod
-              vel velit a asperiores! Facilis dicta iure dolorem laudantium
-              repellendus aliquid eaque.
-            </p>
-            <p class="para-2">
-              If you're a culture lover, the historic cities of London and
-              Edinburgh should be at the top of your list. Walk the streets of
-              London's West End, marvel at the architecture of Big Ben and
-              Buckingham Palace, and take in a show at the Globe Theatre. In
-              Edinburgh, visit the Royal Mile, explore the castle, and sample
-              the local fare at the city's world-famous restaurants.
-            </p>
-            <p class="para-3">
-              For those seeking a bit of relaxation, head to the spas and
-              resorts of the English countryside. Indulge in a luxurious massage
-              or take a dip in a hot spring. If you're looking for something a
-              bit more active, strap on your hiking boots and tackle the rugged
-              trails of the coastal cliffs.
-            </p>
-          </div>
-        </div>
-
-        <div id="destinations">
-          <div class="destination destination-1">
-            <a href="/pages/destinations-gal.html">
-              <img src="/images/destinations/paris.jpg" alt="Paris" />
-            </a>
-          </div>
-
-          <div class="destination destination-2">
-            <img
-              src="/images/destinations/san-francisco.jpg"
-              alt="San Francisco"
-            />
-          </div>
-
-          <div class="destination destination-3">
-            <img src="/images/destinations/sydney.jpg" alt="Sydney" />
-          </div>
-
-          <div class="destination destination-4">
-            <img src="/images/destinations/tokyo.jpg" alt="Tokyo" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container-md">
-        <div id="links">
-          <h4>Links</h4>
-          <a href="/index.html">Home</a>
-          <a href="/pages/destinations-gal.html">Destinations</a>
-          <a href="/index.html">About</a>
-          <a href="/pages/contact-us.html">Contact</a>
-        </div>
-
-        <div id="newsletter">
-          <div id="newsletter-paragraph">
-            <h4>Newsletter</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur <br />
-              adipisicing elit. Quia molestias alias natus, porro odio quo.
-            </p>
-          </div>
-
-          <div class="input-group mb-3">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-              class="form-control"
-            />
-
-            <button type="button" id="subscribe-btn" class="btn btn-success">
-              Subscribe <img src="/icons/arrow-right-white.svg" alt="" />
-            </button>
-          </div>
-
-          <div class="input-group-append" id="subscribe"></div>
-        </div>
-      </div>
-    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
