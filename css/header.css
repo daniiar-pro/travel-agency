@@ -95,7 +95,7 @@ header {
 
 #menu nav a {
   color: white;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   line-height: 40px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -130,8 +130,8 @@ header {
   outline: none;
   text-align: center;
   vertical-align: bottom;
-  margin-top: 1.5rem;
-  height: calc(100% - 1.5rem);
+   margin-top: 2rem;
+  /* height: calc(100% - 1.5rem);  */
   width: 100%;
 }
 

@@ -14,15 +14,143 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styling/destinations-gal.css" />
+    <link rel="stylesheet" href="../styling/destinations-gal.css" />
     <title>Destinations</title>
   </head>
   <body>
-  
-  
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <div>
+            <form class="input-group">
+              <img src="../icons/search-white.svg" alt="search-icon" />
+              <input
+                class="form-control"
+                id="search-field"
+                name="query"
+                placeholder="Search"
+                type="text"
+              />
+            </form>
+          </div>
 
-  
+          <div id="logo">
+            <a href="/index.html">
+              <img
+                src="../icons/globe-white.svg"
+                alt="logo"
+                style="width: 100%"
+              />
+            </a>
+          </div>
 
-  
+          <div id="menu-icons">
+            <a href="./contact-us.html" id="image-second">
+              <img
+                src="../icons/contact-icon.svg"
+                alt="contact-icon"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+
+          <div class="menu-text">
+              <a href="./contact-us.html" >Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="destinations-gal">
+      <h1>Select your next destination</h1>
+      <div class="container-md wrap">
+        <div class="gallery-image">
+          <a href="./destination-page.html">
+            <img src="../images/destinations/paris.jpg" alt="paris" />
+          </a>
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/gdansk.jpg" alt="gdansk" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/krakow.jpg" alt="krakow" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/moscow.jpg" alt="moscow" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/andreas.jpg" alt="andreas" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/paulo-silva.jpg" alt="paulo-silva" />
+        </div>
+        <div class="gallery-image">
+          <img
+            src="../images/destinations/saint-peterburg.jpg"
+            alt="saint-peterburg"
+          />
+        </div>
+        <div class="gallery-image">
+          <img
+            src="../images/destinations/san-francisco.jpg"
+            alt="san-francisco"
+          />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/silva.jpg" alt="silva" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/sydney.jpg" alt="sydney" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/tokyo.jpg" alt="tokyo" />
+        </div>
+        <div class="gallery-image">
+          <img src="../images/destinations/warsaw.jpg" alt="warsaw" />
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container-md">
+        <div id="links">
+          <h3>Links</h3>
+          <nav>
+            <a href="/index.html">Home</a>
+            <a href="./contact-us.html">Contact</a>
+          </nav>
+        </div>
+
+        <div id="newsletter">
+          <h3>Newsletter</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input
+              type="email"
+              autocomplete="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <button
+              class="btn btn-success"
+              type="submit"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Subscribe <img src="../icons/arrow-right-white.svg" alt="arrow" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

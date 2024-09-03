@@ -1,0 +1,130 @@
+
+header {
+    background-color: rgb(0,123,255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header .container-md {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr; */
+ display: flex;
+  justify-content: space-between;
+}
+
+#search-field {
+  border-radius: 10px;
+}
+
+#logo {
+  width: 3rem;
+}
+
+#menu-icons {
+  width: 2.5rem;
+}
+
+.menu-text {
+  font-size: 1.5rem;
+}
+
+.menu-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-text a:hover {
+  border-bottom: 2px solid white;
+}
+
+  .destinations-gal {
+    margin-top: 3rem;
+  }
+
+  .destinations-gal h1 {
+    text-align: center;
+    margin-bottom:1rem;
+  }
+
+  .gallery-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .gallery-image img:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+  
+  #footer {
+   background-color: #ffc107;
+   margin-top: 5rem;
+   padding-top: 30px;
+   padding-bottom: 60px;
+ }
+ 
+ #footer nav {
+   display: flex;
+   flex-flow: column nowrap;
+ }
+ 
+ #links nav a {
+   display: block;
+   color: black;
+ }
+
+  @media screen and (min-width: 768px) {
+
+    .destinations-gal > .container-md {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+     .destinations-gal > .container-md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+      } 
+   
+    
+  }
+ 
+  @media screen and (max-width: 430px) {
+    .destinations-gal > .container-md {
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 10px;
+   } 
+    
+  }
+  
+  @media screen and (min-width: 650px) {
+    #menu-icons {
+      display: none;
+    }
+  }
+
+ @media screen and (max-width: 650px) {
+    .menu-text, #logo {
+      display: none;
+    }
+ }
+  
+
+@media screen and (min-width: 576px) {
+  #footer > .container-md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  footer nav {
+    margin-bottom: 0;
+  }
+}
