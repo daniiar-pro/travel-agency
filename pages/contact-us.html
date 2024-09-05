@@ -24,34 +24,151 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../styling/" />
+    <link rel="stylesheet" href="../styling/contact-us.css" />
     <title>Contact us</title>
   </head>
   <body>
-  
-<h1>hello</h1>
-   
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <div>
+            <form class="input-group">
+              <img src="../icons/search-white.svg" alt="search-icon" />
+              <input
+                class="form-control"
+                id="search-field"
+                name="query"
+                placeholder="Search"
+                type="text"
+              />
+            </form>
+          </div>
 
-<div class="container-md">
-  <form class="row g-3">
-      <div class="col-md-4">
-        <label for="userName">Name</label>
-        <input type="text" class="form-control" id="userName" required placeholder="John Wick" />
+          <div id="logo">
+            <a href="/index.html">
+              <img
+                src="../icons/globe-white.svg"
+                alt="logo"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+
+          <div id="menu-icons">
+            <div>
+              <a href="./destinations-gal.html">
+                <img
+                  src="../icons/destination-icon.svg"
+                  alt="destinations"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-text">
+            <a href="./destinations-gal.html">Destinations</a>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <div class="col-md-4">
-        <label for="userEmail">Email</label>
-        <input type="email" class="form-control" id="userEmail" required placeholder="john@gmail.com" />
+    <div class="container-md form-message">
+      <h1 style="text-align: center">Contact us</h1>
+      <form action="./contact-success.html" class="row g-3">
+        <div class="col-sm-12">
+          <label for="userName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="userName"
+            required
+            placeholder="John Wick"
+          />
+        </div>
+
+        <div class="col-md-12">
+          <label for="userEmail">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="userEmail"
+            required
+            placeholder="john@gmail.com"
+          />
+        </div>
+
+        <div class="col-md-12">
+          <label for="userPhone">Phone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="userPhone"
+            required
+            placeholder="123-456-7890"
+          />
+        </div>
+
+        <div class="col-md-12">
+          <label for="userMessage">Message</label>
+          <textarea
+            name="userMessage"
+            id="userMessage"
+            required
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <div class="col-md-12" style="margin-bottom: 2rem;">
+          <a href="./contact-success.html">
+            <button type="submit" class="form-control btn btn-primary">
+              Send
+            </button>
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer">
+      <div class="container-md">
+        <div id="links">
+          <h3>Links</h3>
+          <nav>
+            <a href="/index.html">Home</a>
+            <a href="./contact-us.html">Contact</a>
+          </nav>
+        </div>
+
+        <div id="newsletter">
+          <h3>Newsletter</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input
+              type="email"
+              autocomplete="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <button
+              class="btn btn-success"
+              type="submit"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Subscribe <img src="../icons/arrow-right-white.svg" alt="arrow" />
+            </button>
+          </form>
+        </div>
       </div>
-
-      <div class="col-md-4">
-        <label for="userPhone">Phone</label>
-        <input type="tel" class="form-control" id="userPhone" required placeholder="123-456-7890">
-      </div>
-
-
-    </form>
-  </div>
-
+    </footer>
   </body>
 </html>
