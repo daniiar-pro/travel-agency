@@ -14,15 +14,214 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styling/destination-page.css" />
+    <link rel="stylesheet" href="../styling/destination.css" />
     <title>Destination</title>
   </head>
   <body>
-   
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <div>
+            <form class="input-group">
+              <img src="../icons/search-white.svg" alt="search-icon" />
+              <input
+                class="form-control"
+                id="search-field"
+                name="query"
+                placeholder="Search"
+                type="text"
+              />
+            </form>
+          </div>
 
-  
-hello
-   
- 
+          <div id="logo">
+            <a href="/index.html">
+              <img
+                src="../icons/globe-white.svg"
+                alt="logo"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+
+          <div id="menu-icons">
+            <div>
+              <a href="./contact-us.html" id="image-second">
+                <img
+                  src="../icons/contact-icon.svg"
+                  alt="contact-icon"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="./destinations-gal.html">
+                <img
+                  src="../icons/destination-icon.svg"
+                  alt="destinations"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-text">
+            <a href="./destinations-gal.html">Destinations</a>
+            <a href="./contact-us.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="destination-page">
+      <h1 style="text-align: center; margin-top: 2rem">
+        Ready to visit Paris?
+      </h1>
+
+      <div class="container-md" id="destination-info">
+        <div class="destination-pic">
+          <img src="../images/destination/paris11.jpg" alt="paris" />
+        </div>
+
+        <div class="destination-description">
+          <p>
+            Lorem ipsum dolor sit amet, adventure travel mountains, beach
+            resorts and cultural experiences await. Pack your bags and get ready
+            to <strong>explore the world</strong>! From bustling cities to
+            tranquil countryside getaways, there's a destination for every type
+            of traveler.
+          </p>
+          <p>
+            If you're a culture lover, the <em>historic cities</em> of London
+            and Edinburgh should be at the top of your list. Walk the streets of
+            London's West End, marvel at the architecture of Big Ben and
+            Buckingham Palace, and take in a show at the Globe Theatre. In
+            Edinburgh, visit the Royal Mile, explore the castle, and sample the
+            local fare at the city's world-famous restaurants.
+          </p>
+          <p>
+            For those seeking a bit of relaxation,
+            <strong>head to the spas</strong> and resorts of the English
+            countryside. Indulge in a luxurious massage or take a dip in a hot
+            spring. If you're looking for something a bit more active, strap on
+            your hiking boots and tackle the rugged trails of the coastal
+            cliffs.
+          </p>
+        </div>
+      </div>
+
+      <div id="book">
+        <div class="container-md wrap">
+          <form>
+            <div class="destination-select">
+              <label>Destination</label>
+              <select
+                name="destination"
+                id="book-field-destination"
+                class="form-select"
+                required
+              >
+                <option value="" disabled selected>Destination</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="sydney">Sydney</option>
+                <option value="san-francisco">San Francisco</option>
+              </select>
+            </div>
+
+            <div class="from">
+              <label for="book-field-from"> From </label>
+
+              <input
+                type="date"
+                aria-label="From"
+                class="form-control"
+                id="book-field-form"
+                name="from"
+                required
+              />
+            </div>
+
+            <div class="to">
+              <label for="book-field-to"> To </label>
+              <input
+                type="date"
+                aria-label="To"
+                class="form-control"
+                id="book-field-to"
+                name="to"
+                required
+              />
+            </div>
+
+            <div class="guests">
+              <label for="book-field-guests"> Guests </label>
+              <input
+                type="number"
+                aria-label="Enter a number of guests"
+                class="form-control"
+                id="book-field-guests"
+                max="10"
+                min="1"
+                name="guests"
+                value="2"
+              />
+            </div>
+
+            <div class="submit">
+              <button
+                class="btn btn-primary form-control"
+                title="Search"
+                type="submit"
+              >
+                <img src="../icons/arrow-right-white.svg" alt="arrow" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container-md">
+        <div id="links">
+          <h3>Links</h3>
+          <nav>
+            <a href="/index.html">Home</a>
+            <a href="./contact-us.html">Contact</a>
+          </nav>
+        </div>
+
+        <div id="newsletter">
+          <h3>Newsletter</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input
+              type="email"
+              autocomplete="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <button
+              class="btn btn-success"
+              type="submit"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Subscribe <img src="../icons/arrow-right-white.svg" alt="arrow" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
