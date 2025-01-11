@@ -1,5 +1,5 @@
 # Travel Landing Page
-# Visit: # https://daniiar-pro.github.io/travel-agency/
+# Visit:  https://daniiar-pro.github.io/travel-agency/
 
 1. Simple Landing Page Created with HTML,CSS,Boostrap
 2. CSS features like: Flexbox, Grid have been widely used
